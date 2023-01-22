@@ -16,7 +16,6 @@ try:
     input3 = browser.find_element(By.CSS_SELECTOR, "div.first_block input.form-control.third")
     input3.send_keys("Smolensk@smilensk.name")
     # Ваш код, который заполняет обязательные поля
-    ...
 
     # Отправляем заполненную форму
     button = browser.find_element(By.CSS_SELECTOR, "button.btn")
