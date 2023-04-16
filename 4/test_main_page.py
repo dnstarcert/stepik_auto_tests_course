@@ -5,7 +5,7 @@ from time import sleep
 from datetime import datetime
 
 
-"""
+
 def test_guest_can_go_to_login_page(browser):
     link = "http://selenium1py.pythonanywhere.com"
     page = MainPage(browser, link)
@@ -58,7 +58,7 @@ def test_guest_can_add_product_to_basket(browser):
     page.price_must_math(price, basket_price)
     page.should_not_be_success_message()
 
-"""
+
 def test_guest_cant_see_success_message_after_adding_product_to_basket(browser):
     link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=newYear2019"
     page = ProductPage(browser, link)
