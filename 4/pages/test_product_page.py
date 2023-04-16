@@ -34,3 +34,11 @@ class ProductPage(BasePage):
     @staticmethod
     def price_must_math(how, what):
         assert how == what, "price do not match"
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*BasketLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
+
+    def message_should_not_dissapired(self):
+        assert self.is_not_element_present(*BasketLocators.SUCCESS_MESSAGE), \
+            "Success message is dissapired, but should not be"
